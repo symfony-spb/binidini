@@ -1,0 +1,5 @@
+# This file is part of the Binidini package.
+# (c) Denis Manilo
+
+sylius_web:
+    resource: @SyliusWebBundle/Resources/config/routing/main.yml
