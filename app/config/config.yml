@@ -2,6 +2,8 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: @SyliusCoreBundle/Resources/config/app/main.yml }
+    - { resource: @BiniWebBundle/Resources/config/services.yml }
+
 
 framework:
     translator:      { fallback: %sylius.locale% }
@@ -27,7 +29,7 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles:        ['SyliusWebBundle']
+    bundles:        ['SyliusWebBundle', 'BiniWebBundle', 'CmfCreateBundle']
     filters:
         cssrewrite: ~
 
@@ -72,3 +74,8 @@ swiftmailer:
     username:  %sylius.mailer.user%
     password:  %sylius.mailer.password%
     spool:     { type: memory }
+
+fos_rest:
+    view:
+        formats:
+            json: true

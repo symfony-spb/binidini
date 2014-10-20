@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5e16f2f2778fccd1487577677e61be5e",
+    "hash": "606aba71824b50c017776ec30df5f46e",
     "packages": [
         {
             "name": "ajbdev/authorizenet-php-api",
@@ -324,16 +324,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "fec965d330c958e175c39e61c3f6751955af32d0"
+                "reference": "0368bc031976126e5d36d37d2c56155092b6575b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/fec965d330c958e175c39e61c3f6751955af32d0",
-                "reference": "fec965d330c958e175c39e61c3f6751955af32d0",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/0368bc031976126e5d36d37d2c56155092b6575b",
+                "reference": "0368bc031976126e5d36d37d2c56155092b6575b",
                 "shasum": ""
             },
             "require": {
@@ -345,7 +345,7 @@
                 "symfony/console": "~2.0"
             },
             "suggest": {
-                "symfony/console": "Allows use of the command line interface"
+                "symfony/console": "For helpful console commands such as SQL execution and import of files."
             },
             "type": "library",
             "autoload": {
@@ -359,23 +359,20 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
                 }
             ],
             "description": "Database Abstraction Layer",
@@ -386,7 +383,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2014-01-01 16:43:57"
+            "time": "2014-10-16 11:56:49"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -4192,12 +4189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Sylius.git",
-                "reference": "dab8b78fb96e7f3f66676f5bc18919461e97408f"
+                "reference": "b89041277d31372ba49ae03dc7dfd935f8518385"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/dab8b78fb96e7f3f66676f5bc18919461e97408f",
-                "reference": "dab8b78fb96e7f3f66676f5bc18919461e97408f",
+                "url": "https://api.github.com/repos/Sylius/Sylius/zipball/b89041277d31372ba49ae03dc7dfd935f8518385",
+                "reference": "b89041277d31372ba49ae03dc7dfd935f8518385",
                 "shasum": ""
             },
             "require": {
@@ -4341,7 +4338,7 @@
             ],
             "description": "Modern ecommerce for Symfony2",
             "homepage": "http://sylius.org",
-            "time": "2014-10-15 13:02:10"
+            "time": "2014-10-16 18:14:49"
         },
         {
             "name": "symfony-cmf/block-bundle",
@@ -6852,16 +6849,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "3.7.37",
+            "version": "3.7.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ae6cefd7cc84586a5ef27e04bae11ee940ec63dc"
+                "reference": "38709dc22d519a3d1be46849868aa2ddf822bcf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ae6cefd7cc84586a5ef27e04bae11ee940ec63dc",
-                "reference": "ae6cefd7cc84586a5ef27e04bae11ee940ec63dc",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/38709dc22d519a3d1be46849868aa2ddf822bcf6",
+                "reference": "38709dc22d519a3d1be46849868aa2ddf822bcf6",
                 "shasum": ""
             },
             "require": {
@@ -6921,7 +6918,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-04-30 12:24:19"
+            "time": "2014-10-17 09:04:17"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
