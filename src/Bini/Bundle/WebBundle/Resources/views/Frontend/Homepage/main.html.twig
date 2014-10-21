@@ -1,0 +1,91 @@
+{% extends 'SyliusWebBundle:Frontend:layout.html.twig' %}
+
+{% block slideshow_full %}
+    <div class="row">
+        {{ sonata_block_render({'name': '/cms/blocks/slideshow-full'}) }}
+    </div>
+{% endblock %}
+
+{% block slideshow_sidebar %}
+    <div class="row">
+        {{ sonata_block_render({'name': '/cms/blocks/slideshow-sidebar'}) }}
+    </div>
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="myCarousel" class="carousel slide thumbnail">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li class="" data-target="#myCarousel" data-slide-to="1"></li>
+            <li class="" data-target="#myCarousel" data-slide-to="2"></li>
+            <li class="" data-target="#myCarousel" data-slide-to="3"></li>
+            <li class="" data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="{{ asset('bundles/biniweb/img/splash_0.jpg') }}" />
+                <div class="carousel-caption">
+                    <h3>Стеклотканевые обои «VITRULAN</h3>
+                    <p>
+                        открывают новую перспективу в архитектуре подвесных потолков. Благодаря своей геометрической структуре и многообразию цветовых решений, подвесной потолок Грильято позволяет создавать разнообразные варианты дизайна помещений.
+                        <a href="#">Подробнее...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ asset('bundles/biniweb/img/splash_1.jpg') }}" />
+                <div class="carousel-caption">
+                    <h4>Стеклотканевые обои «VITRULAN</h4>
+                    <p>
+                        это функциональность и простота в эксплуатации, совместимость с инженерно-техническим оборудованием, легкость монтажа и демонтажа.
+                        <a href="#">Подробнее...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ asset('bundles/biniweb/img/splash_2.jpg') }}" />
+                <div class="carousel-caption">
+                    <h4>Стеклотканевые обои «VITRULAN</h4>
+                    <p>
+                        это долговечность, отличная звуко- и шумоизоляция, хорошая теплоизоляция, всесезонность монтажа и демонтажа, неограниченные варианты дизайна, легкость конструкции, пожарная безопасность.
+                        <a href="#">Подробнее...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ asset('bundles/biniweb/img/splash_3.jpg') }}" />
+                <div class="carousel-caption">
+                    <h4>Стеклотканевые обои «VITRULAN»</h4>
+                    <p>
+                        прослужат Вам более 30 лет, они гигроскопичны и паропроницаемы, на них не оседает пыль, а также не накапливается статическое электричество.
+                        <a href="#">Подробнее...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ asset('bundles/biniweb/img/splash_4.jpg') }}" />
+                <div class="carousel-caption">
+                    <h4>Стеклотканевые обои «VITRULAN»</h4>
+                    <p>
+                        прослужат Вам более 30 лет, они гигроскопичны и паропроницаемы, на них не оседает пыль, а также не накапливается статическое электричество.
+                        <a href="#">Подробнее...</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+{{ sonata_block_render({'name': '/cms/blocks/slideshow-home'}) }}
+
+{{ render(url('sylius_partial_product_latest', {'limit': 9, 'template': 'SyliusWebBundle:Frontend/Product:latest.html.twig'})) }}
+
+{% endblock %}
