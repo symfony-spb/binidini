@@ -3,7 +3,6 @@ sylius_installer:
 
 binidini_web:
     resource: @BiniWebBundle/Resources/config/routing/main.yml
-    host: localhost
 
 payum_capture:
     resource: "@PayumBundle/Resources/config/routing/capture.xml"
